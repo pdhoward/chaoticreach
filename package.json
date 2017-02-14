@@ -1,10 +1,10 @@
 {
   "name": "chaoticreach",
   "version": "0.5.0",
-  "description": "cognitive networks - ui interface in aws",
-  "main": "index.js",
+  "description": "cognitive network - ui interface in aws",
+  "main": "server.js",
   "scripts": {
-    "create": "claudia create --region us-east-1 --api-module server --name test1 --profile client1",
+    "create": "claudia create --region us-east-1 --api-module server --profile client1",
     "updatetwilio": "claudia update --region us-east-1 --configure-twilio-sms-bot",
     "update": "claudia update --region us-east-1",
     "start": "ntl"
@@ -14,11 +14,14 @@
   "author": "pdhoward",
   "license": "MIT",
   "homepage": "http://www.xio.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pdhoward/chaoticreach.git"
+  },
   "dependencies": {
     "claudia-bot-builder": "^2.13.0",
-    "huh": "^1.1.4",
-    "greeting": "1.0.6",
-    "node-fetch": "1.6.3"
+    "node-fetch": "1.6.3",
+    "dotenv": "4.0.0"
   },
   "devDependencies": {
     "claudia": "^2.6.0",

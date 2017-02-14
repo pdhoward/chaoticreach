@@ -1,11 +1,11 @@
 {
   "lambda": {
-    "role": "test1-executor",
-    "name": "test1",
+    "role": "chaoticreach-executor",
+    "name": "chaoticreach",
     "region": "us-east-1"
   },
   "api": {
-    "id": "p1j374p3lk",
+    "id": "ugsbqy25bi",
     "module": "server"
   }
 }
