@@ -10,7 +10,9 @@ var botBuilder =      require('claudia-bot-builder');
 var fetch =           require('node-fetch');
 
 module.exports = botBuilder(function(message) {
-   return fetch('http://chaotic.ngrok.io/api/message').then(function(res) {
-       return res.text();
-     });
-});
+
+   return fetch('http://chaotic.ngrok.io/api/message', { method: 'POST', body: message})
+                .then(function(res) {
+                    return res.text();
+              });
+        });
