@@ -7,7 +7,9 @@
 var botBuilder =      require('claudia-bot-builder');
 var axios =           require('axios');
 
-module.exports = botBuilder(function(message) {
+module.exports = botBuilder(function(message, originalApiRequest) {
+
+   console.log({api: originalApiRequest})
 
    return axios.post('http://chaotic.ngrok.io/api/message',
                 { body: message })
